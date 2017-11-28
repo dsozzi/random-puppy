@@ -14,3 +14,10 @@ Simply follow these steps:
 # Tests
 
 To run some tests simply enter `npm run test`
+
+# Docker
+
+To create a docker image of this web app:
+
+1. `docker build -t react-docker .¡
+2. `docker run -it --rm -p 5000:5000 --name react-demo react-docker`
