@@ -1,0 +1,137 @@
+/* Some resets */
+/*-------------*/
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: -apple-system, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Helvetica, Helvetica Neue, sans-serif;
+  margin: 0;
+  color: #505050;
+}
+body * {
+  box-sizing: border-box;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #505050;
+}
+
+/* Main view structure */
+/*---------------------*/
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+
+#mainApp {
+  display: flex;
+  padding-top: 120px;
+  height: 100%;
+  background: #f1ce69;
+}
+
+.container {
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  background: #84b8e6;
+  left: 0;
+  right: 0;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f1ce69;
+}
+
+.header-logo {
+  height: 100px;
+  width: auto;
+  margin-right: 30px;
+}
+
+.content-view {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: auto;
+}
+
+.sidebar {
+  flex: 0;
+  border-right: 1px solid lightgray;
+  overflow: auto;
+  flex-basis: 200px;
+  height: 100%;
+}
+
+/* Sidebar */
+/*---------*/
+.breeds-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.breeds-container li a {
+  padding: 10px;
+  display: block;
+}
+
+/* Dog item */
+/*----------*/
+.button {
+  color: white;
+  background: #84b8e6;
+  border: none;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 200px;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.button:hover:enabled {
+  background: linear-gradient(#84b8e6, #75addf);
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button.button-more {
+  display: block;
+  margin: auto;
+}
+
+.puppy-container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border: 10px solid white;
+}
+
+.empty-placeholder {
+  color: white;
+  font-size: 4em;
+  opacity: 0.4;
+  user-select: none;
+}
