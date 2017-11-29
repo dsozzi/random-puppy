@@ -11,6 +11,20 @@ Simply follow these steps:
 2. run `npm install` inside the cloned folder
 3. run `npm run start` 
 
+
 # Tests
 
 To run some tests simply enter `npm run test`
+
+
+# Docker
+
+To create a docker image of this web app run the following commands inside the project folder:
+
+1. `docker build -t random-puppy-docker .`
+2. `docker run -it --rm -p 5000:5000 --name react-demo random-puppy-docker`
+3. visit [http://localhost:5000/](http://localhost:5000/)
+
+### Note
+In case you want it to run as daemon use flag `-d` in the run command.
+`docker run -it --rm -d -p 5000:5000 --name react-demo random-puppy-docker`
