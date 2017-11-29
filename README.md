@@ -27,4 +27,5 @@ To create a docker image of this web app run the following commands inside the p
 
 ### Note
 In case you want it to run as daemon use flag `-d` in the run command.
+
 `docker run -it --rm -d -p 5000:5000 --name react-demo random-puppy-docker`
